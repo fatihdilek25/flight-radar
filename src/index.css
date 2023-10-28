@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  background: #242424;
+  color: rgba(255, 255, 255, 0.87);
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.active {
+  background: #535bf2;
+}
+
+.select-button {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+
+button {
+  width: 120px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.87);
+  background: grey;
+}
+
+button:nth-child(1) {
+  border-radius: 6px 0 0 6px;
+}
+
+button:nth-child(2) {
+  border-radius: 0 6px 6px 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
+}
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 90px;
+}
+.logo {
+  display: flex;
+  position: relative;
+}
+
+.logo h3 {
+  position: absolute;
+  top: -7px;
+  left: 13px;
+  color: rgb(37, 170, 226);
+}
+.map-container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 95%;
+  height: 75vh;
+}
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+
+  gap: 10px;
+  text-align: center;
+}
+
+.popup button {
+  background: #535bf2;
+  border-radius: 6px;
+}
+
+.detail-outer {
+  position: fixed;
+  z-index: 2000;
+  top: 100px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.detail-inner {
+  background: #242424;
+  height: 90%;
+  width: 300px;
+  padding: 15px;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 2px 2px 20px #535bf2;
+}
+
+.detail-inner a {
+  text-decoration: none;
+  color: #535bf2;
+}
+.close {
+  cursor: pointer;
+  font-size: 30px;
+  display: flex;
+  justify-content: end;
+  background: #535bf2;
+  padding-right: 15px;
+  border-radius: 30px;
+}
+
+.paginate {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+}
+
+.paginate .active {
+  background: #535bf2;
+  border-radius: 5px;
+}
+.paginate .active a {
+  padding: 10px;
+
+  text-decoration: none;
+}
+
+.list-page {
+  padding: 0 40px;
+}
